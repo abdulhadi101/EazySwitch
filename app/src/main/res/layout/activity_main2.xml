@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp"
+    android:background="#c9dcd2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textAllCaps="true"
+        android:layout_marginTop="60dp"
+        android:textSize="50dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+
+        android:layout_height="wrap_content"
+        android:text="Click the Bluetooth Icon to Connect to a Bluetooth Device" />
+
+    <ImageButton
+
+        android:id="@+id/btnTurnOnBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/bluetoothor" />
+</LinearLayout>

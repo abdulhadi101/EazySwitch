@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginStart="40dp"
+                        android:id="@+id/bulb1_btn"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/bulb1" />
+
+                    <ImageButton
+                        android:id="@+id/bulb2_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        app:srcCompat="@drawable/bulb1" />
+
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/bulb2_btn"
+                        android:layout_alignRight="@+id/bulb2_btn"
+                        android:layout_below="@+id/bulb2_btn"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:text="@string/BulbOFF" />
+                <ToggleButton
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:checked="true"
+                    android:layout_below="@+id/textView1" />
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/bulb3_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:adjustViewBounds="false"
+                        android:cropToPadding="true"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/bulb1" />
+
+                    <ImageButton
+                        android:id="@+id/switch1_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="35dp"
+                        app:srcCompat="@drawable/switchbtn" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bulb3_btn"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginStart="55dp"
+                        android:text="@string/BulbOFF" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/switch1_btn"
+                        android:layout_alignRight="@+id/switch1_btn"
+                        android:layout_below="@+id/switch1_btn"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/SwitchOFF" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/switch2_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        app:srcCompat="@drawable/switchbtn" />
+
+                    <ImageButton
+                        android:id="@+id/door_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="30dp"
+                        app:srcCompat="@drawable/doorlock1" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/switch2_btn"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginStart="55dp"
+                        android:text="@string/SwitchOFF" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/door_btn"
+                        android:layout_alignRight="@+id/door_btn"
+                        android:layout_below="@+id/door_btn"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/doorLock" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Bluetooth Status" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="32dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_toEndOf="@+id/textView7"
+                        android:layout_toRightOf="@+id/textView7"
+                        android:text="Not Connected" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+</ScrollView>
+
